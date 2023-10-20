@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body class="m-0 p-0 bg-black text-white font-mono">
+    <nav class="flex justify-center h-10 p-4">
+      <ul class="list-none">
+        <li class="text-2xl">Tic Tac Toe</li>
+      </ul>
+    </nav>
+    <div class="gamecontainer flex justify-center mt-32  ">
+      <div id="container"
+        class=" grid grid-cols-3 grid-rows-3 font-bold text-4xl relative "
+      >
+        <div
+          class="cursor-pointer box border-2 flex p-10 items-center justify-center border-t-0 border-l-0 border-b-0  "
+          
+        >
+          <span class="boxtext"></span>
+        </div>
+        <div
+          class="cursor-pointer box border-2 flex p-10 items-center justify-center border-t-0 border-l-0 border-b-0"
+          
+        >
+          <span class="boxtext"></span>
+        </div>
+        <div
+          class="cursor-pointer box border-2 items-center flex p-10 justify-center border-t-0 border-b-0 border-l-0 border-r-0 "
+          
+        >
+          <span class="boxtext"> </span>
+        </div>
+        <div
+          class="cursor-pointer box border-2 flex p-10 justify-center items-center border-l-0 "
+          
+        >
+          <span class="boxtext"> </span>
+        </div>
+        <div
+          class="cursor-pointer box border-2 flex p-10 items-center justify-center border-l-0"
+          
+        >
+          <span class="boxtext"></span>
+        </div>
+        <div
+          class="cursor-pointer box border-2  flex p-10 items-center justify-center border-l-0 border-r-0 "
+          
+        >
+          <span class="boxtext"></span>
+        </div>
+        <div
+          class="cursor-pointer box border-2  flex p-10 items-center justify-center border-l-0 border-t-0 border-b-0 "
+          
+        >
+          <span class="boxtext"></span>
+        </div>
+        <div
+          class="cursor-pointer box border-2 flex p-10 items-center justify-center  border-l-0 border-t-0 border-b-0 "
+          
+        >
+          <span class="boxtext"></span>
+        </div>
+        <div
+          class="cursor-pointer box border-2 flex p-10 items-center justify-center  border-l-0 border-r-0 border-t-0 border-b-0 "
+          
+        >
+          <span class="boxtext"> </span>
+        </div>
+      </div>
+    </div>
+    <h1 class="flex justify-center  justify-items-center mt-5 text-2xl">
+      Welcome to Tic Tac Toe
+    </h1>
+    <div class="gameinfo flex justify-center mt-5">
+      <div>
+        <div id="info" class="info"><p>Turn of X</p></div>
+        <button
+          id="reset"
+          class="  transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-md p-3">Reset</button>
+        <div class="imgbox w-0 relative -mt-96 justify-center"><img src="win.gif" alt="winner"></div>
+
+</div></div>
+          
+   
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

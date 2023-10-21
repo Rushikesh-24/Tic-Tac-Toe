@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="/assets/index-79b0b79a.css">
+  </head>
+  <body class="m-0 p-0 bg-black text-white font-body">
+    <div id="mainpart" class="">
+    <nav class="flex justify-center h-10 p-4">
+      <ul class="list-none">
+        <li class="text-2xl">Tic Tac Toe</li>
+      </ul>
+    </nav>
+    <div class="gamecontainer flex justify-center mt-32  ">
+      <div id="container"
+        class=" grid grid-cols-3 grid-rows-3 font-bold text-4xl relative "
+      >
+        <div
+          class="cursor-pointer box border-2 flex p-10 items-center justify-center border-t-0 border-l-0 border-b-0  "
+          
+        >
+          <span class="boxtext"></span>
+        </div>
+        <div
+          class="cursor-pointer box border-2 flex p-10 items-center justify-center border-t-0 border-l-0 border-b-0"
+          
+        >
+          <span class="boxtext"></span>
+        </div>
+        <div
+          class="cursor-pointer box border-2 items-center flex p-10 justify-center border-t-0 border-b-0 border-l-0 border-r-0 "
+          
+        >
+          <span class="boxtext"> </span>
+        </div>
+        <div
+          class="cursor-pointer box border-2 flex p-10 justify-center items-center border-l-0 "
+          
+        >
+          <span class="boxtext"> </span>
+        </div>
+        <div
+          class="cursor-pointer box border-2 flex p-10 items-center justify-center border-l-0"
+          
+        >
+          <span class="boxtext"></span>
+        </div>
+        <div
+          class="cursor-pointer box border-2  flex p-10 items-center justify-center border-l-0 border-r-0 "
+          
+        >
+          <span class="boxtext"></span>
+        </div>
+        <div
+          class="cursor-pointer box border-2  flex p-10 items-center justify-center border-l-0 border-t-0 border-b-0 "
+          
+        >
+          <span class="boxtext"></span>
+        </div>
+        <div
+          class="cursor-pointer box border-2 flex p-10 items-center justify-center  border-l-0 border-t-0 border-b-0 "
+          
+        >
+          <span class="boxtext"></span>
+        </div>
+        <div
+          class="cursor-pointer box border-2 flex p-10 items-center justify-center  border-l-0 border-r-0 border-t-0 border-b-0 "
+          
+        >
+          <span class="boxtext"> </span>
+        </div>
+      </div>
+    </div>
+    <h1 class="flex justify-center  justify-items-center mt-20 text-2xl">
+      Welcome to Tic Tac Toe
+    </h1>
+    <div class="gameinfo flex items-center justify-center mt-5">
+       <div>
+        <div id="info" class="info"><p>Turn of X</p></div>
+        
+        </div>
+        <div class="imgbox w-0 relative -mt-96 justify-center"><img src="/assets/win-7b595c61.gif" alt="winner"></div>
+
+</div></div>
+    </div>
+    <div class="flex justify-center align-middle space-x-3 mt-6">
+    <button id="reset" class=" text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center  dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 ">Reset</button>
+<!-- rules -->
+<button id="showRulesButton" class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center  dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900  ">Rules</button>
+</div>
+    <div id="rulesModal" class="hidden fixed inset-0 z-10 justify-center items-center top-0 left-0 w-full h-full  overflow-auto ">
+        <div class="modal-content mx-10 my-auto p-5  w-4/5 text-sm">
+            <span class="close absolute top-2 right-2 text-xl cursor-pointer" id="close">X</span>
+            <h2 class="flex justify-center">Game Rules</h2>
+            <!-- Insert your rules content here -->
+        
+<p>
+1.Objective:Be the first player to form a line of three of your marks (either "X" or "O") horizontally, vertically, or diagonally on the game board.</p>
+
+<p>2.Gameplay:
+   - Two players take turns to make their moves in empty cells.
+   - Player 1 ("X") goes first, followed by Player 2 ("O").
+   - Players take turns placing their mark in an empty cell of the grid.</p>
+
+<p>3.Winning Conditions:
+   - A player wins if they have three of their marks in a row in any direction: horizontally, vertically, or diagonally.</p>
+
+<p>4.Ending the Game:
+   - The game ends when:
+     - One player forms a winning line.
+     - All 9 cells on the grid are filled, resulting in a draw.</p>
+
+<p>5.Draw (Tie) Condition:
+   - If all cells are filled, and no player has won, the game is a draw (tie).</p>
+
+
+
+        </div>
+    </div>
+    <div id="overlay" class="overlay hidden fixed top-0 left-0 w-full h-full opacity-50 "></div>
+   
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
